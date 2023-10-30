@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header{
+    display: flex;
+    padding-bottom: 1.5vw;
+    border-bottom:3px solid gray;
+}
+header .left-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#333;
+    color: #fff;
+    padding: 20px;
+    width: 60%;
+    height: inherit;
+}
+header .right-head{
+    padding: 10px;
+    width: 40%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #ff8181; */
+}
+.right-head .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14vw;
+}
+.right-head .info p{
+    padding-top: 8px;
+}
+.right-head i{
+    border: 2px solid black;
+    padding: 4px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+#contact p{
+    padding-right: 4vw;
+}
+#location i{
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+#location p{
+    padding-right: 1vw;
+}
+h1 {
+    font-size: 3.2vw;
+    margin-bottom: 5px;
+}
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    
+}
+
+.right{
+    width: 70%;
+}
+
+.inner_cont{
+    width: 50%;
+}
+.contact, .about ,.courses, .education, .experience, .skills {
+    margin: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ .education-item, .experience-item {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background:#333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 600px) {
+    header .right-head{
+        padding-top: 20vw;
+        width: 100%;
+    }
+    .left{
+        width: 40%;
+    }
+    header .right-head p{
+        font-size: 4vw;
+    }
+    header .right-head .info{
+        width: 50vw;
+        margin-top: 6px;
+    }
+    #contact p{
+        padding-right: 15vw;
+    }
+    #location p{
+        padding-right: 3vw;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    h1+p{
+        font-size: 3.7vw;
+    }
+   .about,.education,.skills,.courses{
+        flex-direction: column;
+        align-items: center;
+   }
+   .about .left h2{
+    font-size: 6.5vw;
+   }
+   .about .right p,.courses .right{
+    font-size: 3vw;
+   }
+   .education .left h2,.skills .left h2  , .courses .left h2{
+    font-size: 6vw;
+   }
+   .education .right .education-item p,.courses .right .education-item p{
+    font-size: 3vw;
+   }
+   .container{
+    flex-direction: column;
+   }
+   .education .right .education-item h3,.courses .right .education-item h3{
+    font-size:4vw;
+   }
+   .skills , .courses{
+    width: 94%;
+   }
+   .skills li{
+    font-size: 3vw;
+   }
+   .contact, .education, .experience, .skills , .courses{
+    margin: 10px;
+    padding: 5px;
+   }
+    
+}
